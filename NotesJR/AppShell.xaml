@@ -6,7 +6,8 @@
     xmlns:views="clr-namespace:NotesJR.Views"
     Shell.FlyoutBehavior="Flyout"
     Title="NotesJR"
-     FlyoutIcon="progreso2icon.png">
+     FlyoutIcon="progreso2icon.png"
+   >
 
     <TabBar>
         <ShellContent
@@ -27,11 +28,25 @@
 
     <FlyoutItem Title="Progreso2">
         <ShellContent
+        Title="Progreso2"
         ContentTemplate="{DataTemplate views:Progreso2PageJR}"
-            Icon="{OnPlatform 'progreso2icon.png', iOS='progreso2icon.png', MacCatalyst='progreso2icon.png'}"/>
+        Icon="{OnPlatform 'progreso2icon.png', iOS='progreso2icon.png', MacCatalyst='progreso2icon.png'}" />
+       
     </FlyoutItem>
 
-   
+    <FlyoutItem Title="AboutPAge">
+        <ShellContent
+ Title="About"
+ ContentTemplate="{DataTemplate views:AboutPageJR}"
+ Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="AllNotesPAge">
+        <ShellContent
+ Title="AllNotePAge"
+ ContentTemplate="{DataTemplate views:AllNotesPageJR}"
+ Icon="{OnPlatform 'icon_notes_ios.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
+    </FlyoutItem>
 
 
 

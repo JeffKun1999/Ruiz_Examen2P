@@ -6,7 +6,7 @@
     <Frame CornerRadius="10" HasShadow="True" Margin="20">
         <VerticalStackLayout BackgroundColor="#FFFFFF">
             <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Ingresa un texto para contarlo!"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
