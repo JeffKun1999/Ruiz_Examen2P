@@ -4,8 +4,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:NotesJR.Views"
-    Shell.FlyoutBehavior="Disabled"
-    Title="NotesJR">
+    Shell.FlyoutBehavior="Flyout"
+    Title="NotesJR"
+     FlyoutIcon="progreso2icon.png">
 
     <TabBar>
         <ShellContent
@@ -17,6 +18,21 @@
             Title="About"
             ContentTemplate="{DataTemplate views:AboutPageJR}"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+        <ShellContent
+            Title="Progreso2"
+            ContentTemplate="{DataTemplate views:Progreso2PageJR}"
+            Icon="{OnPlatform 'progreso2icon.png', iOS='progreso2icon.png', MacCatalyst='progreso2icon.png'}" />
+        
     </TabBar>
+
+    <FlyoutItem Title="Progreso2">
+        <ShellContent
+        ContentTemplate="{DataTemplate views:Progreso2PageJR}"
+            Icon="{OnPlatform 'progreso2icon.png', iOS='progreso2icon.png', MacCatalyst='progreso2icon.png'}"/>
+    </FlyoutItem>
+
+   
+
+
 
 </Shell>
